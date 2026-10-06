@@ -1,0 +1,51 @@
+.about {
+  width: min(100%, 840px);
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.picture {
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.headings h1 {
+  margin-bottom: 14px;
+}
+
+.headings h2 {
+  margin-bottom: 8px;
+}
+
+.bio {
+  margin-bottom: 36px;
+  line-height: 1.8;
+}
+
+.education h2 {
+  margin-bottom: 12px;
+}
+
+.education p {
+  line-height: 1.7;
+}
+
+@media (max-width: 520px) {
+  .about {
+    padding: 40px 20px;
+  }
+
+  .intro {
+    gap: 22px;
+    margin-bottom: 30px;
+  }
+}

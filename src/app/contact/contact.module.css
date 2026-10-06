@@ -1,0 +1,50 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.content {
+  width: min(100%, 760px);
+}
+
+.content h1 {
+  margin-bottom: 20px;
+  font-size: clamp(30px, 6vw, 42px);
+}
+
+.content h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.content > p {
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 36px;
+  padding-top: 8px;
+}
+
+.details h3 {
+  margin-bottom: 8px;
+}
+
+.details p {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  .details {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
